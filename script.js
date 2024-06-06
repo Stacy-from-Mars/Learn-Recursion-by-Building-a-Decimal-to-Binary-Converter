@@ -1,5 +1,5 @@
-const  callStack = [
-
+const callStack = [
+    `a(): returns "freeCodeCamp " + b()`
 ];
 
 const a = () => {
@@ -11,7 +11,7 @@ const b = () => {
 };
 
 const c = () => {
-  return "awesome!";
+    return "awesome!";
 }
 
 console.log(a());
