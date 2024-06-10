@@ -15,9 +15,15 @@ const showAnimation = () => {
 }
 
 const checkUserInput = () => {
-    if (!numberInput.value || isNaN(parseInt(numberInput.value))) {
+    if (!numberInput.value ||
+        isNaN(parseInt(numberInput.value)) ||
+        parseInt(numberInput.value) < 0
+    ) {
         alert("Please provide a decimal number");
         return;
+    }
+    if (parseInt(numberInput.value) === 5) {
+
     }
     result.textContent = decimalToBinary(parseInt(numberInput.value));
     numberInput.value = "";
