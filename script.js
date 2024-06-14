@@ -35,7 +35,7 @@ const showAnimation = () => {
     animationData.forEach(obj => {
         setTimeout(() => {
             animationContainer.innerHTML += `
-                <p id=""></p>
+                <p id="${obj.inputVal}"></p>
             `;
         }, obj.addElDelay);
     })
