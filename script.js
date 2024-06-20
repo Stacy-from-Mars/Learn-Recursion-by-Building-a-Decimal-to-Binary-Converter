@@ -52,9 +52,12 @@ const showAnimation = () => {
         setTimeout(() => {
             document.getElementById(obj.inputVal).textContent = obj.msg
         }, obj.showMsgDelay);
-        setTimeout(()=>{
+        setTimeout(() => {
             document.getElementById(obj.inputVal).remove();
         }, obj.removeElDelay);
+        setTimeout(() => {
+
+        }, 20000);
     })
 }
 
